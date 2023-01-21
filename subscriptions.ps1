@@ -37,6 +37,5 @@ $subscriptions = Get-AzSubscription
         $script:subscription = $subscriptions
         Set-AzContext -Subscription $subscription.SubscriptionId | Out-Null
         Write-Host "`nSelected following subscription:" -ForegroundColor Yellow
-        Write-Host "$($subscription.Name) from tenant $($subscription.TenantId)`n" -ForegroundColor Green
-        
+        Write-Host "$($subscription.Name) from tenant $($subscription.TenantId)`n" -ForegroundColor Green   
     }
